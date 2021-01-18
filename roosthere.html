@@ -23,6 +23,24 @@
         background-repeat: no-repeat;
         background-size: auto;
     }
+        .video-container{
+        overflow:hidden;
+        padding-bottom:50%;
+        padding-top:5px;
+        margin-left:30px;
+        margin-right:30px;
+        margin-bottom:50px;
+        margin-top:50px;
+        position:relative;
+        height:0;
+    }
+        .video-container iframe, .video-container object, .video-container embed{
+        left:0;
+        top:0;
+        height:100%;
+        width:100%;
+        position:absolute;
+    }
 
    </style>
 
@@ -32,8 +50,9 @@
 
 <body>
   <center>
-    <br><br><br><br><br><br>
-    <iframe width="854" height="480" src="https://www.youtube.com/embed/_bHqN1OInE0?controls=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div class="video-container">
+      <iframe width="854" height="480" src="https://www.youtube.com/embed/_bHqN1OInE0?controls=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
   </center>
 </body>
 </html>
